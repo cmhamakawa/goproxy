@@ -23,7 +23,7 @@ var (
 	cacherMaxCacheBytes = flag.Int("cacher-max-cache-bytes", 0, "maximum number (0 means no limit) of bytes allowed for the cacher to store a cache")
 	proxiedSUMDBs       = flag.String("proxied-sumdbs", "", "comma-separated list of proxied checksum databases")
 	tempDir             = flag.String("temp-dir", os.TempDir(), "directory for storing temporary files")
-	insecure            = flag.Bool("insecure", false, "allow insecure TLS connections")
+	insecure            = flag.Bool("insecure", true, "allow insecure TLS connections")
 )
 
 func main() {
